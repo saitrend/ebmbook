@@ -1,0 +1,21 @@
+@import "tailwindcss";
+
+/* Tailwind v4 manual dark mode variant */
+@custom-variant dark (&:where(.dark, .dark *));
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Base styling with complementary background tones for glassmorphism */
+body {
+  font-family:
+    Inter,
+    Arial,
+    sans-serif;
+  @apply bg-neutral-50 text-neutral-900 transition-colors duration-300 dark:bg-neutral-950 dark:text-neutral-100;
+}
+
+* {
+  box-sizing: border-box;
+}
